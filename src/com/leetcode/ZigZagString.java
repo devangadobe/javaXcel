@@ -13,7 +13,6 @@ public class ZigZagString {
 	        StringBuilder stb = new StringBuilder();
 	        int j=0;
 	        int max=(numRows-1)*2;
-	        int p=2;
 	        int k=0;
 	              
 	        for(int i=0; i<numRows ; i++){
