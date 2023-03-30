@@ -1,7 +1,5 @@
 package com.leetcode;
 
-import java.util.LinkedList;
-
 public class MergeTwoLLists {
 
 	public static void main(String[] args) {

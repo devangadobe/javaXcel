@@ -1,9 +1,7 @@
 package com.leetcode;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 public class RomantoIntS {
 
@@ -50,7 +48,6 @@ public class RomantoIntS {
          
          //System.out.println(smap);
          int num = 0;
-         int i=j;
          while(j<s.length()) {        	 
         	str+=s.charAt(j);
         	if(!smap.containsKey(str)){
