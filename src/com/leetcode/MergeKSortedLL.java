@@ -1,6 +1,5 @@
 package com.leetcode;
 
-import java.util.Collections;
 import java.util.PriorityQueue;
 
 public class MergeKSortedLL {
