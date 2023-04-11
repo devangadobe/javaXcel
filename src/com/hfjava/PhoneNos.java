@@ -1,4 +1,4 @@
-package com.test;
+package com.hfjava;
 
 import java.util.*;
 import java.util.stream.Collectors;

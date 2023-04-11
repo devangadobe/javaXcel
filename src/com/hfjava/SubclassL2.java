@@ -1,4 +1,4 @@
-package com.test;
+package com.hfjava;
 
 public class SubclassL2 extends SubclassL1 {
 	

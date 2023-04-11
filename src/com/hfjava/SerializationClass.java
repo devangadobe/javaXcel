@@ -1,4 +1,4 @@
-package com.test;
+package com.hfjava;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
