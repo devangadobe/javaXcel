@@ -42,9 +42,7 @@ public class SherlockandAnagrams {
 	private static String sort(String temp) {
 		
 		char[] arr = temp.toCharArray();
-		
-		Arrays.sort(arr);
-		
+		Arrays.sort(arr);		
 		return String.valueOf(arr);
 
 	}
