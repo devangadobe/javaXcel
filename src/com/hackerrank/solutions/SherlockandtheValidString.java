@@ -31,29 +31,27 @@ public class SherlockandtheValidString {
 		}
 		List<Integer> list = new ArrayList<Integer>(hset);
 
-		if(!hset.contains(1) && Math.abs(list.get(0)-list.get(1))!=1){
+		if (!hset.contains(1) && Math.abs(list.get(0) - list.get(1)) != 1) {
 			return no;
 		}
-		
-		
+
 		Map<Integer, Integer> imap = new HashMap<Integer, Integer>();
-		for(int i : hmap.values()) {
+		for (int i : hmap.values()) {
 			if (imap.containsKey(i)) {
 				imap.put(i, imap.get(i) + 1);
 			} else {
 				imap.put(i, 1);
 			}
 		}
-		
-		if(imap.containsKey(1) && imap.get(1) > 1){
+
+		if (imap.containsKey(1) && imap.get(1) > 1) {
 			return no;
 		}
-		
-		if(imap.containsValue(1)) {
-            return yes;
-        }
-		
-		
+
+		if (imap.containsValue(1)) {
+			return yes;
+		}
+
 		return no;
 	}
 
