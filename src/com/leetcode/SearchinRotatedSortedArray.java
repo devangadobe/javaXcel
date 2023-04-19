@@ -3,7 +3,7 @@ package com.leetcode;
 public class SearchinRotatedSortedArray {
 
 	public static void main(String[] args) {
-		int[] nums = {5,1,2,3,4};
+		int[] nums = { 5, 1, 2, 3, 4 };
 		System.out.println(new SearchinRotatedSortedArray().search(nums, 1));
 
 	}
@@ -13,21 +13,22 @@ public class SearchinRotatedSortedArray {
 		if (nums.length == 0 || (nums.length == 1 && nums[0] != target)) {
 			return -1;
 		}
-		
-		if(nums.length == 1){
+
+		if (nums.length == 1) {
 			return 0;
 		}
-		
-		if(nums.length == 2) {
+
+		if (nums.length == 2) {
 			int i = -1;
-			for(int j=0; j<2; j++){
-				if(nums[j]==target) i=j;
+			for (int j = 0; j < 2; j++) {
+				if (nums[j] == target)
+					i = j;
 			}
 			return i;
 		}
-		
-		//0 rotation check
-		if(nums[0] <  nums[nums.length-1]){
+
+		// 0 rotation check
+		if (nums[0] < nums[nums.length - 1]) {
 			return binarySearch(nums, target, 0, nums.length - 1);
 		}
 
@@ -45,10 +46,10 @@ public class SearchinRotatedSortedArray {
 
 	private int lookForPivot(int[] nums, int l, int r) {
 
-		if (l == r-1) {
-			if(nums[l]>nums[r]){
+		if (l == r - 1) {
+			if (nums[l] > nums[r]) {
 				return r;
-			}else {
+			} else {
 				return l;
 			}
 		}
