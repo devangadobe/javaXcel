@@ -36,6 +36,11 @@ public class MyClass {
 
 	        return false;
 	    }
+	    
+
+	    public int hashCode() {
+	    	return myInt;
+	    }
 
 
 }
