@@ -3,7 +3,7 @@ package com.test;
 public class Solution2 {
 
 	public static void main(String[] args) {
-		System.out.println(new Solution2().solution(0,2,1));
+		System.out.println(new Solution2().solution(1,1,1));
 
 	}
 
