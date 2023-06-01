@@ -5,7 +5,14 @@ public class MyPow {
 	public static void main(String[] args) {
 		System.out.println(new MyPow().myPow(2.000, -2147483648));
 	}
-
+    
+	
+	/**
+	 * This functions returns value of x with power of n
+	 * @param x
+	 * @param n
+	 * @return
+	 */
 	public double myPow(double x, int n) {
 		if (n == 0) {
 			return 1;
