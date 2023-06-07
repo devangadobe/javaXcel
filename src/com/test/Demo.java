@@ -1,14 +1,12 @@
 package com.test;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 
 public class Demo {
-		public static void main(String[] args) {
-			
+		public static void main(String[] args) {		
 			int[] a = { 1, 7 };
 			int[] b = { 7, 1 };
 			List<Integer> alist = new ArrayList<Integer>();
@@ -28,6 +26,12 @@ public class Demo {
 			hset.add(alist);
 			hset.add(blist);
 			System.out.println(hset.toString());
+			
+			String str = "1101";		 
+	        StringBuilder sbc = new StringBuilder();	 
+			sbc.append(str);
+	        sbc.reverse();
+			System.out.println(sbc.toString());
 		}
 
 		public boolean equalLists(List<Integer> a, List<Integer> b) {
