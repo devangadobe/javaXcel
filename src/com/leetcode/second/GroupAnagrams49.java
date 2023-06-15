@@ -34,11 +34,11 @@ public class GroupAnagrams49 {
 				hmap.put(str, tmp);
 			}
 		}
-		
-		for(List<String> tmp1 : hmap.values()) {
+
+		for (List<String> tmp1 : hmap.values()) {
 			list.add(tmp1);
 		}
-		
+
 		return list;
 
 	}
