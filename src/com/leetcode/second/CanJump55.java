@@ -20,11 +20,26 @@ public class CanJump55 {
 		 * 
 		 * } return true;
 		 */
-		int[] flag = new int[nums.length];
-		return canJump(nums, 0, nums.length - 1, false, flag);
+		
+		int goal = nums.length - 1;
+		
+		if(goal<1){
+			return true;
+		}
+		
+		for(int i = goal-1; i>=0; i--) {
+			if(nums[i] >= goal-i) {
+				goal = i;
+			}
+		}
+		
+		return (goal==0);
+		
+		/*int[] flag = new int[nums.length];
+		return canJump(nums, 0, nums.length - 1, false, flag);*/
 	}
 
-	private boolean canJump(int[] nums, int curr, int last, boolean b, int[] flag) {
+	/*private boolean canJump(int[] nums, int curr, int last, boolean b, int[] flag) {
 
 		if (curr >= last) {
 			return true;
@@ -35,9 +50,7 @@ public class CanJump55 {
 		}
 
 		if (flag[curr] == -1) {
-
 			return false;
-
 		}
 
 		for (int i = nums[curr]; i > 0; i--) {
@@ -55,5 +68,5 @@ public class CanJump55 {
 			}
 		}
 		return b;
-	}
+	}*/
 }
