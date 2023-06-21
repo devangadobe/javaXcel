@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Demo {
 		public static void main(String[] args) {		
@@ -32,6 +34,10 @@ public class Demo {
 			sbc.append(str);
 	        sbc.reverse();
 			System.out.println(sbc.toString());
+			
+			String regex = ".jpg/";
+			
+			System.out.println(Pattern.matches(regex, "imp.jpg"));
 		}
 
 		public boolean equalLists(List<Integer> a, List<Integer> b) {
