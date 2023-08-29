@@ -3,7 +3,7 @@ package com.test;
 class Solution{
 	
 	public static void main(String[] args) {
-		new Solution().Solutions(10078);
+		new Solution().Solutions(10010);
 	}
 	
 	public void Solutions(int N) {

@@ -8,25 +8,32 @@ public class Solution2 {
 	}
 
 	public String solution(int AA, int AB, int BB) {
+		
+		String Empty = "";
+		String sAA = "AA";
+		String sA = "A";
+		String sBB = "BB";
+		String sB = "B";
+		String sAB = "AB";
 
 		if (AA == 0 && AB == 0 && BB == 0) {
-			return "";
+			return Empty;
 		}
 
 		if (AA == 1 && AB == 0 && BB == 0) {
-			return "AA";
+			return sAA;
 		}
 
 		if (AA == 0 && AB == 1 && BB == 0) {
-			return "AB";
+			return sAB;
 		}
 
 		if (AA == 0 && AB == 0 && BB == 1) {
-			return "BB";
+			return sBB;
 		}
 
-		String s = "";
-		String rem = "";
+		String s = Empty;
+		String rem = Empty;
 		
 		boolean flagAA = (AA >= AB) && (AA >= BB);
 		boolean flagAB = (AB >= AA) && (AB >= BB);
@@ -34,14 +41,14 @@ public class Solution2 {
 
 		if (AA > 0 && flagAA) {
 			rem = solution(AA - 1, AB, BB);
-			if (rem.startsWith("A") && rem.endsWith("A")) {
+			if (rem.startsWith(sA) && rem.endsWith(sA)) {
 				s = rem;
-			} else if (rem.startsWith("A")) {
-				s = rem+"AA";
-			} else if (rem.endsWith("A")) {
-				s = "AA" + rem;
+			} else if (rem.startsWith(sA)) {
+				s = rem+sAA;
+			} else if (rem.endsWith(sA)) {
+				s = sAA + rem;
 			} else {
-				s = "AA" + rem;
+				s = sAA + rem;
 			}
 			return s;
 		}

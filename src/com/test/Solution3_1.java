@@ -10,10 +10,10 @@ public class Solution3_1 {
 		String temp = str;
 		while(str.length()>0) {
 			temp = str;
-			str = str.replaceAll("AB","");
-			str = str.replaceAll("BA","");
-			str = str.replaceAll("CD","");
-			str = str.replaceAll("DC","");
+			str = str.replaceAll("AB","")
+			.replaceAll("BA","")
+			.replaceAll("CD","")
+			.replaceAll("DC","");
 			if(str.equalsIgnoreCase(temp)){
 				break;
 			}
